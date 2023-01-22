@@ -11,10 +11,8 @@ export const getAllRestaurants = async () => {
  /*    const response = await axios.get(`products`); //<IRestaurantRequest>
     return response.data; */
 
-
   let res = await vegandorApi.get('restaurants');
 
-  let data = res.data;
-  return data
+  return res.data
 
 };
